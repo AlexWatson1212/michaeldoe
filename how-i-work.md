@@ -45,4 +45,4 @@ description: A simple explanation of how therapy with Michael works.
       <a href="/contact/" class="button button-primary">Arrange a first session</a>
     </div>
   </section>
-</main>s
+</main>
