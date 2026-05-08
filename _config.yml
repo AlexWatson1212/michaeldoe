@@ -1,6 +1,8 @@
 title: Michael Therapy
 description: A grounded, straightforward space to talk things through.
-url: "https://michaeltherapy.co.uk"
+
+url: "https://alexwatson1212.github.io"
+baseurl: "/michaeldoe"
 
 markdown: kramdown
 
