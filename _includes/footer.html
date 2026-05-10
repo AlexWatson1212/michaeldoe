@@ -1,12 +1,25 @@
 <footer class="site-footer">
   <div class="container footer-inner">
-    <p>© {{ site.time | date: "%Y" }} Michael Therapy</p>
+    <div class="footer-brand">
+      <a href="{{ '/' | relative_url }}#home" class="footer-logo" aria-label="Michael Therapy home">
+        <span class="logo-mark">M</span>
+        <span>Michael Therapy</span>
+      </a>
 
-    <div class="footer-links">
-      <a href="{{ '/about/' | relative_url }}">About</a>
-      <a href="{{ '/how-i-work/' | relative_url }}">How I Work</a>
-      <a href="{{ '/fees/' | relative_url }}">Fees</a>
-      <a href="{{ '/contact/' | relative_url }}">Contact</a>
+      <p>
+        Calm, practical counselling and therapy in Manchester.
+      </p>
     </div>
+
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="{{ '/' | relative_url }}#support">Support</a>
+      <a href="{{ '/' | relative_url }}#how-it-works">How it works</a>
+      <a href="{{ '/' | relative_url }}#about">About</a>
+      <a href="{{ '/' | relative_url }}#contact">Contact</a>
+    </nav>
+  </div>
+
+  <div class="container footer-bottom">
+    <p>© {{ site.time | date: "%Y" }} Michael Therapy</p>
   </div>
 </footer>
