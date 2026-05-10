@@ -1,16 +1,16 @@
 <header class="site-header">
   <div class="container header-inner">
-    <a href="/" class="site-logo" aria-label="Michael Therapy home">
+    <a href="{{ '/' | relative_url }}" class="site-logo" aria-label="Michael Therapy home">
       <span class="logo-mark">M</span>
       <span class="logo-text">Michael Therapy</span>
     </a>
 
     <nav class="site-nav" aria-label="Main navigation">
-      <a href="/">Home</a>
-      <a href="/about/">About</a>
-      <a href="/how-i-work/">How I Work</a>
-      <a href="/fees/">Fees</a>
-      <a href="/contact/" class="nav-button">Contact</a>
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ '/about/' | relative_url }}">About</a>
+      <a href="{{ '/how-i-work/' | relative_url }}">How I Work</a>
+      <a href="{{ '/fees/' | relative_url }}">Fees</a>
+      <a href="{{ '/contact/' | relative_url }}" class="nav-button">Contact</a>
     </nav>
   </div>
 </header>
