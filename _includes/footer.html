@@ -3,13 +3,16 @@
   <div class="container footer-inner">
 
     <div class="footer-brand">
-      <a href="{{ '/index.html#home' | relative_url }}" class="footer-logo" aria-label="Michael Therapy home">
-        <span class="logo-mark">M</span>
-        <span>Michael Therapy</span>
+      <a href="{{ '/index.html#home' | relative_url }}" class="footer-logo footer-logo-image" aria-label="Michael Doe Counselling home">
+        <img
+          src="{{ '/assets/images/michael-doe-logo.png' | relative_url }}"
+          alt="Michael Doe Counselling"
+          class="footer-logo-img"
+        >
       </a>
 
       <p>
-        Calm, practical counselling and therapy in Manchester.
+        Calm, practical counselling in Manchester.
       </p>
     </div>
 
@@ -24,7 +27,7 @@
 
   <div class="container footer-bottom">
     <p>
-      © {{ site.time | date: "%Y" }} Michael Therapy. All rights reserved.
+      © {{ site.time | date: "%Y" }} Michael Doe Counselling. All rights reserved.
     </p>
   </div>
 
