@@ -3,7 +3,11 @@
   <div class="container footer-inner">
 
     <div class="footer-brand">
-      <a href="{{ '/index.html#home' | relative_url }}" class="footer-logo footer-logo-image" aria-label="Michael Doe Counselling home">
+
+      <a href="{{ '/index.html#home' | relative_url }}"
+         class="footer-logo footer-logo-image"
+         aria-label="Michael Doe Counselling home">
+
         <img
           src="{{ '/assets/images/michael-doe-logo.png' | relative_url }}"
           alt="Michael Doe Counselling"
@@ -11,15 +15,15 @@
         >
       </a>
 
-      <p>
-        Calm, practical counselling in Manchester.
+      <p class="footer-description">
+        Calm, grounded counselling for adults in Manchester and online.
       </p>
+
     </div>
 
     <nav class="footer-links" aria-label="Footer navigation">
-      <a href="{{ '/index.html#support' | relative_url }}">Support</a>
-      <a href="{{ '/index.html#how-it-works' | relative_url }}">How it works</a>
       <a href="{{ '/about.html' | relative_url }}">About</a>
+      <a href="{{ '/index.html#how-it-works' | relative_url }}">How it works</a>
       <a href="{{ '/contact.html' | relative_url }}">Contact</a>
     </nav>
 
@@ -27,7 +31,7 @@
 
   <div class="container footer-bottom">
     <p>
-      © {{ site.time | date: "%Y" }} Michael Doe Counselling. All rights reserved.
+      © {{ site.time | date: "%Y" }} Michael Doe Counselling.
     </p>
   </div>
 
