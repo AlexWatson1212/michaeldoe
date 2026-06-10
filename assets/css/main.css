@@ -170,9 +170,9 @@ p {
 h1 {
   max-width: 760px;
   margin-bottom: 26px;
-  font-size: clamp(3.25rem, 6vw, 6rem);
-  line-height: 0.94;
-  letter-spacing: -0.078em;
+  font-size: clamp(3.15rem, 5.7vw, 5.75rem);
+  line-height: 0.96;
+  letter-spacing: -0.076em;
   text-wrap: balance;
 }
 
@@ -264,7 +264,6 @@ p {
 .about-link:hover::after {
   transform: translateX(4px);
 }
-
 /* Hero */
 
 .hero {
@@ -530,7 +529,6 @@ p {
   font-size: 0.86rem;
   font-weight: 950;
 }
-
 /* First session */
 
 .first-session-section {
@@ -578,7 +576,7 @@ p {
 /* Contact */
 
 .contact-section {
-  padding: 92px 0;
+  padding: 98px 0;
   background:
     radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.08), transparent 34%),
     var(--accent-dark);
@@ -592,18 +590,18 @@ p {
 }
 
 .contact-section h2 {
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
 .contact-section p {
-  max-width: 620px;
+  max-width: 660px;
   margin-left: auto;
   margin-right: auto;
-  color: rgba(255, 255, 255, 0.76);
+  color: rgba(255, 255, 255, 0.78);
 }
 
 .contact-section .button-primary {
-  margin-top: 14px;
+  margin-top: 18px;
   background: #fff;
   color: var(--accent-dark);
   box-shadow: 0 14px 34px rgba(0, 0, 0, 0.18);
@@ -869,8 +867,9 @@ p {
   }
 
   h1 {
-    font-size: clamp(2.8rem, 13vw, 4.15rem);
-    line-height: 0.98;
+    font-size: clamp(2.65rem, 12.5vw, 4.05rem);
+    line-height: 0.99;
+    letter-spacing: -0.07em;
   }
 
   h2 {
