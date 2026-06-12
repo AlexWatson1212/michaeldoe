@@ -1,14 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  {% include head.html %}
-</head>
+<header class="site-header">
+  <div class="container header-inner">
 
-<body>
-  {% include header.html %}
+    <a href="{{ '/' | relative_url }}" class="site-logo" aria-label="Michael Doe Counselling home">
+      <img
+        src="{{ '/assets/images/michael-doe-logo.png' | relative_url }}"
+        alt="Michael Doe Counselling"
+        class="header-logo-img"
+      >
+    </a>
 
-  {{ content }}
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
 
-  {% include footer.html %}
-</body>
-</html>
+    <label for="nav-toggle" class="nav-toggle-label" aria-label="Open menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="#support">Support</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="#first-session">First session</a>
+      <a href="#about">About</a>
+      <a href="#contact" class="nav-button">Get in touch</a>
+    </nav>
+
+  </div>
+</header>
