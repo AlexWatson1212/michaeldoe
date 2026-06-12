@@ -2,7 +2,7 @@
   <div class="container header-inner">
 
     <a href="{{ '/index.html#home' | relative_url }}"
-       class="site-logo site-logo-image"
+       class="site-logo"
        aria-label="Michael Doe Counselling home">
 
       <img
@@ -12,12 +12,37 @@
       >
     </a>
 
+    <!-- Mobile Menu Toggle -->
+    <input
+      type="checkbox"
+      id="nav-toggle"
+      class="nav-toggle"
+      aria-label="Toggle navigation"
+    >
+
+    <label
+      for="nav-toggle"
+      class="nav-toggle-label"
+      aria-label="Open menu"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <!-- Navigation -->
     <nav class="site-nav" aria-label="Main navigation">
       <a href="{{ '/index.html#support' | relative_url }}">Support</a>
       <a href="{{ '/index.html#how-it-works' | relative_url }}">How it works</a>
       <a href="{{ '/index.html#first-session' | relative_url }}">First session</a>
       <a href="{{ '/index.html#about' | relative_url }}">About</a>
-      <a href="{{ '/index.html#contact' | relative_url }}">Get in touch</a>
+
+      <a
+        href="{{ '/index.html#contact' | relative_url }}"
+        class="nav-button"
+      >
+        Get in touch
+      </a>
     </nav>
 
   </div>
