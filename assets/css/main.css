@@ -846,7 +846,7 @@ p {
   }
 
   .site-header {
-    background: rgba(237, 241, 239, 0.97);
+    background: rgba(237, 241, 239, 0.98);
   }
 
   .header-inner {
@@ -865,20 +865,19 @@ p {
 
   .site-nav {
     position: fixed;
-    inset: 0;
-    z-index: 120;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: flex-start;
-    gap: 0;
-    padding: 112px 15px 28px;
-    background:
-      radial-gradient(circle at top left, rgba(47, 76, 89, 0.08), transparent 35%),
-      linear-gradient(135deg, rgba(237, 241, 239, 0.99), rgba(251, 250, 246, 0.99));
+    top: 76px;
+    left: 0;
+    right: 0;
+    z-index: 90;
+    display: grid;
+    gap: 6px;
+    padding: 22px 15px 26px;
+    background: rgba(237, 241, 239, 0.98);
+    border-bottom: 1px solid rgba(18, 27, 26, 0.08);
+    box-shadow: 0 24px 54px rgba(18, 27, 26, 0.12);
     opacity: 0;
     visibility: hidden;
-    transform: translateY(-8px);
+    transform: translateY(-14px);
     pointer-events: none;
     transition:
       opacity 0.22s ease,
@@ -897,18 +896,13 @@ p {
     display: flex;
     align-items: center;
     width: 100%;
-    min-height: 58px;
+    min-height: 50px;
     padding: 0 18px;
-    border-radius: 20px;
+    border-radius: 18px;
     color: var(--text);
-    font-size: 1.22rem;
+    font-size: 1.08rem;
     font-weight: 900;
-    letter-spacing: -0.04em;
-    background: transparent;
-  }
-
-  .site-nav a + a {
-    margin-top: 4px;
+    letter-spacing: -0.03em;
   }
 
   .site-nav a:hover {
@@ -921,8 +915,8 @@ p {
 
   .site-nav .nav-button {
     justify-content: center;
-    min-height: 68px;
-    margin-top: 18px;
+    min-height: 58px;
+    margin-top: 10px;
     border-radius: 999px;
     background: var(--accent);
     color: #fff !important;
@@ -1111,7 +1105,7 @@ p {
   }
 
   .site-nav {
-    padding-top: 104px;
+    top: 76px;
   }
 
   .site-nav a {
