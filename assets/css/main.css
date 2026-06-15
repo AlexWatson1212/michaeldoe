@@ -675,6 +675,7 @@ p {
 .footer-simple {
   max-width: 620px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .footer-title {
@@ -698,11 +699,6 @@ p {
 .footer-email a {
   color: #fff;
   font-weight: 700;
-  text-decoration: none;
-}
-
-.footer-email a:hover {
-  opacity: 0.8;
 }
 
 .footer-copyright {
