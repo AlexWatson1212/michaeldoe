@@ -105,7 +105,7 @@ main[id] {
 
 .header-logo-img {
   display: block;
-  width: 255px;
+  width: 240px;
   max-width: 60vw;
   height: auto;
 }
@@ -840,9 +840,9 @@ p {
   }
 
   .header-logo-img {
-    width: 204px;
-    max-width: 68vw;
-  }
+  width: 190px;
+  max-width: 68vw;
+}
 
   .nav-toggle-label {
     display: inline-flex;
