@@ -40,8 +40,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-body:has(.nav-toggle:checked) {
-  overflow: hidden;
+@media (max-width: 760px) {
+  body:has(.nav-toggle:checked) {
+    overflow: hidden;
+  }
 }
 
 img {
