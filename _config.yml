@@ -1,10 +1,26 @@
-title: Michael Therapy
-description: A grounded, straightforward space to talk things through.
+title: "Alex Watson"
+description: "Calm, clear websites for therapists that help the right clients feel safe enough to reach out."
 
-url: "https://michaeldoe.co.uk"
+url: "https://alexanderwatson.co.uk"
 baseurl: ""
 
 markdown: kramdown
+kramdown:
+  input: GFM
+
+future: true
+permalink: /:title/
 
 plugins:
-  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - netlify.toml
+  - node_modules
+  - vendor
+  - .bundle
+  - .jekyll-cache
+  - _site
