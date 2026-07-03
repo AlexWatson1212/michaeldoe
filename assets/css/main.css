@@ -1588,7 +1588,258 @@ p {
 }
 
 /* =========================================================
-20. RESPONSIVE
+20. CLIENT WORK / LIVE DOCUMENTS
+========================================================= */
+
+.client-document-page {
+  background: var(--bg);
+  color: var(--text);
+}
+
+.client-work-shell {
+  width: min(100% - 2.8rem, 1100px);
+  margin: 0 auto;
+  padding: 56px 0 90px;
+}
+
+.client-doc {
+  --doc-ink: #211e1b;
+  --doc-soft: #56514a;
+  --doc-moss: #7b8f70;
+  --doc-clay: #9a6b4a;
+  --doc-rule: #dad5c9;
+  --doc-rule-strong: #b9b2a3;
+
+  max-width: 780px;
+  margin: 0 auto;
+  color: var(--doc-ink);
+  font-family: var(--font-body);
+  line-height: 1.65;
+}
+
+.client-doc .doc-cover {
+  text-align: center;
+  padding: 70px 24px 58px;
+}
+
+.client-doc .doc-logo {
+  height: 46px;
+  width: auto;
+  margin: 0 auto 26px;
+}
+
+.client-doc .doc-project {
+  margin-bottom: 0.7rem;
+  color: var(--doc-soft);
+  font-size: 0.78rem;
+  font-weight: 760;
+}
+
+.client-doc .doc-document-count {
+  margin-top: 0.75rem;
+  color: var(--doc-clay);
+  font-size: 0.72rem;
+  font-weight: 850;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.client-doc .doc-mark,
+.client-doc .doc-eyebrow,
+.client-doc .doc-label,
+.client-doc .doc-num {
+  font-size: 0.68rem;
+  font-weight: 850;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.client-doc .doc-mark,
+.client-doc .doc-eyebrow {
+  color: var(--accent-dark);
+}
+
+.client-doc .doc-label,
+.client-doc .doc-num {
+  color: var(--doc-clay);
+}
+
+.client-doc h1,
+.client-doc h2,
+.client-doc h3 {
+  font-family: var(--font-heading);
+}
+
+.client-doc h1 {
+  max-width: none;
+  margin: 20px auto 10px;
+  font-size: clamp(2.7rem, 5vw, 4.6rem);
+  line-height: 0.98;
+}
+
+.client-doc h2 {
+  max-width: none;
+  font-size: clamp(1.9rem, 3vw, 3rem);
+}
+
+.client-doc .doc-subtitle,
+.client-doc .doc-note,
+.client-doc .doc-soft {
+  color: var(--doc-soft);
+}
+
+.client-doc .doc-page,
+.client-doc .doc-panel {
+  background: rgba(255, 253, 248, 0.58);
+  border: 1px solid var(--doc-rule-strong);
+  border-radius: 24px;
+  box-shadow: var(--shadow-xs);
+}
+
+.client-doc .doc-page {
+  padding: clamp(1.6rem, 4vw, 2.8rem);
+}
+
+.client-doc .doc-rule {
+  border: 0;
+  border-top: 1px solid var(--doc-rule);
+  margin: 52px 0;
+}
+
+.client-doc .doc-rule-strong {
+  border-top-color: var(--doc-rule-strong);
+}
+
+.client-doc .doc-quote {
+  margin: 26px 0;
+  padding: 22px 26px;
+  border-left: 3px solid var(--accent);
+  background: rgba(123, 143, 112, 0.07);
+  border-radius: 0 18px 18px 0;
+}
+
+.client-doc .doc-quote p,
+.client-doc blockquote {
+  font-style: italic;
+}
+
+.client-doc .doc-grid-two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.client-doc .doc-card {
+  display: block;
+  margin-bottom: 0.9rem;
+  padding: 1.35rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.58);
+  border: 1px solid var(--line);
+  color: var(--doc-ink);
+}
+
+.client-doc .doc-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(123, 143, 112, 0.24);
+  box-shadow: var(--shadow-xs);
+}
+
+.client-doc .doc-card-moss {
+  background: rgba(123, 143, 112, 0.08);
+}
+
+.client-doc .doc-card-clay {
+  background: rgba(154, 107, 74, 0.07);
+}
+
+.client-doc .doc-swatches {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.client-doc .doc-swatch {
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  border: 1px solid rgba(16, 32, 51, 0.1);
+}
+
+/* Client document bottom navigation */
+
+.client-doc-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 64px auto 0;
+  padding-top: 28px;
+  border-top: 1px solid var(--doc-rule);
+}
+
+.client-doc-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 253, 248, 0.72);
+  color: var(--doc-soft);
+  font-size: 0.82rem;
+  font-weight: 820;
+}
+
+.client-doc-nav a:hover {
+  background: var(--white);
+  color: var(--doc-ink);
+  transform: translateY(-2px);
+}
+
+/* Client footer inside documents */
+
+.client-work-footer {
+  width: min(100% - 2.8rem, 760px);
+  margin: 0 auto;
+  padding: 52px 0 80px;
+  border-top: 1px solid var(--line);
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* Hide the old client header if still present */
+
+.client-work-header {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  .client-work-shell {
+    width: min(100% - 1.6rem, 1100px);
+    padding-top: 28px;
+  }
+
+  .client-doc .doc-cover {
+    padding: 44px 12px 38px;
+  }
+
+  .client-doc .doc-grid-two {
+    grid-template-columns: 1fr;
+  }
+
+  .client-doc-nav {
+    flex-direction: column;
+  }
+
+  .client-doc-nav a {
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+/* =========================================================
+21. RESPONSIVE
 ========================================================= */
 
 @media (max-width: 1180px) {
